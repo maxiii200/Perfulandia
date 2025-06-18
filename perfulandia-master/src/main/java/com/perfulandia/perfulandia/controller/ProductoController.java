@@ -21,7 +21,7 @@ public class ProductoController {
     @GetMapping("/{id}")
     public Producto obtener(@PathVariable Long id) {return service.obtenerPorId(id);}
 
-    @GetMapping
+    @PostMapping
     public Producto crear(@RequestBody Producto producto) {return service.guardar(producto);}
 
     @DeleteMapping("/{id}")
